@@ -73,7 +73,8 @@ external-dns:
 # The Itential image to use, its version, and its location
 image:
   # -- The image repository
-  repository: "497639811223.dkr.ecr.us-east-2.amazonaws.com/automation-gateway5"
+  # -- Contact Itential to get the correct image repository for your entitlement.
+  repository: 
   # -- The image tag
   tag: "5.1.1-amd64"
   # -- The image pull policy
