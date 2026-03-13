@@ -56,11 +56,11 @@ etcd:
   # Resource limits
   resources:
     limits:
-      cpu: 500m
-      memory: 512Mi
+      cpu: "4"
+      memory: "10Gi"
     requests:
-      cpu: 250m
-      memory: 256Mi
+      cpu: "2"
+      memory: "8Gi"
 
 certManager:
   # -- Toggles the use of cert-manager for managing the TLS certificates. Setting this to false
@@ -161,18 +161,18 @@ resources:
   enabled: true
   runners:
     limits:
+      cpu: "6"
+      memory: "10Gi"
+    requests:
       cpu: "4"
       memory: "8Gi"
-    requests:
-      cpu: "1000m"
-      memory: "256Mi"
   servers:
     limits:
+      cpu: "2"
+      memory: "4Gi"
+    requests:
       cpu: "1"
       memory: "2Gi"
-    requests:
-      cpu: "1000m"
-      memory: "256Mi"
 
 livenessProbe:
   enabled: true
